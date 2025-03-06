@@ -1,13 +1,11 @@
 {
-  {
   "name": "com.berkcankarabulut.utilities",
-    "version": "1.0.0",
-    "displayName": "Utilities",
-    "description": "A set of utility functions for Unity.",
-    "author": {
-      "name": "BerkcanKarabulut",
-      "url": "https://github.com/berkcankarabulut"
-    },
-    "unity": "2020.3",
+  "version": "1.0.0",
+  "displayName": "Utilities",
+  "description": "A set of utility functions for Unity.",
+  "unity": "2020.3",
+  "author": {
+    "name": "Berkcankarabulut",
+    "url": "https://github.com/berkcankarabulut"
   }
-} 
+}
