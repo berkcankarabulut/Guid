@@ -1,0 +1,11 @@
+{
+  "name": "com.berkcankarabulut.utilities",
+  "version": "1.0.0",
+  "displayName": "Utilities",
+  "description": "A set of utility functions for Unity.",
+  "author": {
+    "name": "BerkcanKarabulut",
+    "url": "https://github.com/berkcankarabulut"
+  },
+  "_fingerprint": "b9575f65c0c9a0daa45f2978e3bf8e3d81fab1b4"
+}
