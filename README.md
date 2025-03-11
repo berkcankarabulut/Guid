@@ -1,10 +1,7 @@
 <body>
-
   <h1>📦 PackageUtilities</h1>
     <p><strong>PackageUtilities</strong> is a modular and flexible utility library for Unity, providing essential helper functions and event management systems.</p>
-
   <h2>🚀 Features</h2>
-
   <h3>1️⃣ EventBus (Event Management System)</h3>
     <p>The EventBus allows <strong>loosely coupled communication</strong> between different components.</p>
     <ul>
@@ -24,7 +21,6 @@ EventBus.Instance.Subscribe<GameStartEvent>(OnGameStart);
 EventBus.Instance.Raise<GameStartEvent>();
 EventBus.Instance.Unsubscribe<GameStartEvent>(OnGameStart);
     </code></pre>
-
   <h3>2️⃣ Singleton (Singleton Object Management)</h3>
     <p>Used for managing objects that should only have a single instance in the project.</p>
     <ul>
@@ -35,7 +31,6 @@ EventBus.Instance.Unsubscribe<GameStartEvent>(OnGameStart);
     <pre><code>public class GameManager : Singleton< GameManager > { }
 GameManager.Instance.DoSomething();
     </code></pre>
-
   <h3>3️⃣ Notifier (Observer-Based Notification System)</h3>
     <p>Lightweight messaging system for <strong>independent component communication.</strong></p>
     <ul>
@@ -47,9 +42,8 @@ GameManager.Instance.DoSomething();
 messageNotifier.Subscribe(msg => Debug.Log("Received: " + msg));
 messageNotifier.Notify("Hello, World!");
     </code></pre>
-
   <h3>4️⃣ Serializable (Serializable GUID Support)</h3>
-    <p>Provides serialization support for Unity’s GUID system.</p>
+    <p>Provides serialization support for Unity's GUID system.</p>
     <ul>
         <li><code>SerializableGuid</code> structure stores GUIDs as <code>uint</code> values.</li>
         <li>Includes helper methods like <code>ToHexString()</code>, <code>ToGuid()</code>, and <code>NewGuid()</code>.</li>
@@ -59,14 +53,24 @@ string hex = sGuid.ToHexString();
 Guid normalGuid = sGuid.ToGuid();
     </code></pre>
 
+  <h3>5️⃣ TagSelector (Unity Tag Selection System)</h3>
+    <p>Custom property drawer that enables <strong>convenient tag selection</strong> in the Unity Inspector.</p>
+    <ul>
+        <li><strong>Single Tag Selection:</strong> Select Unity tags from a dropdown menu.</li>
+        <li><strong>Tag List Support:</strong> Manage arrays/lists of Unity tags with a compact UI.</li>
+        <li><strong>Usage:</strong> Simply add the <code>[TagSelector]</code> attribute to any string or string array/list field.</li>
+    </ul>
+    <pre><code>[SerializeField, TagSelector] protected string targetTag;
+[SerializeField, TagSelector] protected List< string > requiredTags;
+    </code></pre>
+    <p>Makes working with Unity's tag system more intuitive, eliminating typos and improving workflow efficiency.</p>
+
   <h2>📦 Installation</h2>
     <p>1. Clone this repository:</p>
     <pre><code>git clone https://github.com/berkcankarabulut/PackageUtilities.git</code></pre>
     <p>2. Add it to your Unity project.</p>
     <p>3. Configure the necessary settings.</p>
-
   <h2>📄 License</h2>
     <p>This project is licensed under the MIT License. For more details, see the <a href="LICENSE">LICENSE</a> file.</p>
-
 </body>
 </html>
