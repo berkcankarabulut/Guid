@@ -59,7 +59,7 @@ namespace Project.Utility.Editor
             
             if (property.isArray)
             {
-                return lineHeight + (property.arraySize * lineHeight);
+                return lineHeight + ((property.arraySize * lineHeight) / 5);
             }
             
             return lineHeight;
