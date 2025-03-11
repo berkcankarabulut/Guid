@@ -59,8 +59,7 @@ namespace Project.Utility.Editor
             
             if (property.isArray)
             {
-                // Başlık satırı + her eleman için bir satır (+ biraz boşluk)
-                return lineHeight + (property.arraySize * lineHeight) + 2;
+                return lineHeight + (property.arraySize * lineHeight);
             }
             
             return lineHeight;
