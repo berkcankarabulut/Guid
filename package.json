@@ -1,6 +1,6 @@
 {
   "name": "com.berkcankarabulut.utilities",
-  "version": "1.1.2",
+  "version": "1.2.4",
   "displayName": "Utilities",
   "description": "A set of utility functions for Unity.",
   "unity": "2020.3",
