@@ -1,4 +1,4 @@
-namespace Project.Save.Runtime
+namespace Project.Utility.Runtime.Save
 {
     public interface ISaveable
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Project.Save.Runtime
+namespace Project.Utility.Runtime.Save
 {
     public struct SaveGameEvent {}
     public struct RequestSaveablesEvent 

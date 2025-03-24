@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Project.Save.Runtime
+namespace Project.Utility.Runtime.Save
 {
     public class SavingWrapper : MonoBehaviour
     {
@@ -14,8 +14,7 @@ namespace Project.Save.Runtime
         }
 
         public void Load()
-        {
-            print("_savingSystem:"+_savingSystem);
+        { 
             _savingSystem.Load(defaultSaveFile);
         }
 

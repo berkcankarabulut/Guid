@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
-using Project.Utility.Runtime;
+using UnityEngine; 
 
-namespace Project.Save.Runtime
+namespace Project.Utility.Runtime.Save
 {
     public class SaveableEntity : MonoBehaviour
     {

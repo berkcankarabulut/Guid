@@ -1,7 +1,7 @@
 using System; 
 using UnityEngine;
 
-namespace Project.CommandSystem.Runtime
+namespace Project.Utility.Runtime.CommandSystem
 { 
     public abstract class Command : MonoBehaviour 
     {
