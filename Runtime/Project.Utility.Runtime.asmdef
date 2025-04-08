@@ -1,6 +1,6 @@
 {
-    "name": "Project.Utility.Runtime",
-    "rootNamespace": "Project.Utility.Runtime",
+    "name": "Project.Guid.Runtime",
+    "rootNamespace": "Project.Guid.Runtime",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
