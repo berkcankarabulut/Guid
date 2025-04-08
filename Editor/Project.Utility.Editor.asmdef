@@ -1,6 +1,6 @@
 {
-    "name": "Project.Utility.Editor",
-    "rootNamespace": "Project.Utility.Editor",
+    "name": "Guid.Editor",
+    "rootNamespace": "Guid.Editor",
     "references": [
         "Project.Utility.Runtime"
     ],
