@@ -2,26 +2,7 @@
   <h1>📦 Utilities</h1>
     <p><strong>Utilities</strong> is a modular and flexible utility library for Unity, providing essential helper functions and event management systems.</p>
   <h2>🚀 Features</h2>
-  <h3>1️⃣ EventBus (Event Management System)</h3>
-    <p>The EventBus allows <strong>loosely coupled communication</strong> between different components.</p>
-    <ul>
-        <li><strong>Action-based Events:</strong> Handles events without return values.</li>
-        <li><strong>Func-based Events:</strong> Handles events with return values.</li>
-        <li><strong>Key Methods:</strong></li>
-        <ul>
-            <li><code>Subscribe<T>(Action handler)</code> → Adds an event listener.</li>
-            <li><code>Raise<T>()</code> → Triggers an event.</li>
-            <li><code>RaiseWithResults<T, TResult>()</code> → Calls an event and returns results.</li>
-            <li><code>ClearSubscriptions<T>()</code> → Clears all subscriptions.</li>
-            <li><code>GetSubscriberCount<T>()</code> → Returns the number of subscribers.</li>
-        </ul>
-    </ul>
-    <pre><code>void OnGameStart() { Debug.Log("Game Started!"); }
-EventBus.Instance.Subscribe<GameStartEvent>(OnGameStart);
-EventBus.Instance.Raise<GameStartEvent>();
-EventBus.Instance.Unsubscribe<GameStartEvent>(OnGameStart);
-    </code></pre>
-  <h3>2️⃣ Notifier (Observer-Based Notification System)</h3>
+  <h3>1️⃣ Notifier (Observer-Based Notification System)</h3>
     <p>Lightweight messaging system for <strong>independent component communication.</strong></p>
     <ul>
         <li><code>Subscribe(T handler)</code> → Adds an event listener.</li>
@@ -32,7 +13,7 @@ EventBus.Instance.Unsubscribe<GameStartEvent>(OnGameStart);
 messageNotifier.Subscribe(msg => Debug.Log("Received: " + msg));
 messageNotifier.Notify("Hello, World!");
     </code></pre>
-  <h3>3️⃣ Serializable (Serializable GUID Support)</h3>
+  <h3>2️⃣ Serializable (Serializable GUID Support)</h3>
     <p>Provides serialization support for Unity's GUID system.</p>
     <ul>
         <li><code>SerializableGuid</code> structure stores GUIDs as <code>uint</code> values.</li>
@@ -43,7 +24,7 @@ string hex = sGuid.ToHexString();
 Guid normalGuid = sGuid.ToGuid();
     </code></pre>
 
-  <h3>4️⃣ TagSelector (Unity Tag Selection System)</h3>
+  <h3>3️⃣ TagSelector (Unity Tag Selection System)</h3>
     <p>Custom property drawer that enables <strong>convenient tag selection</strong> in the Unity Inspector.</p>
     <ul>
         <li><strong>Single Tag Selection:</strong> Select Unity tags from a dropdown menu.</li>
