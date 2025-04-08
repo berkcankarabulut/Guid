@@ -21,17 +21,7 @@ EventBus.Instance.Subscribe<GameStartEvent>(OnGameStart);
 EventBus.Instance.Raise<GameStartEvent>();
 EventBus.Instance.Unsubscribe<GameStartEvent>(OnGameStart);
     </code></pre>
-  <h3>2️⃣ Singleton (Singleton Object Management)</h3>
-    <p>Used for managing objects that should only have a single instance in the project.</p>
-    <ul>
-        <li><strong>Instance Property:</strong> Provides safe access to the singleton instance.</li>
-        <li><strong>dontDestroyOnLoad:</strong> Prevents the object from being destroyed when loading a new scene.</li>
-        <li><strong>autoInitialize:</strong> Controls automatic initialization.</li>
-    </ul>
-    <pre><code>public class GameManager : Singleton< GameManager > { }
-GameManager.Instance.DoSomething();
-    </code></pre>
-  <h3>3️⃣ Notifier (Observer-Based Notification System)</h3>
+  <h3>2️⃣ Notifier (Observer-Based Notification System)</h3>
     <p>Lightweight messaging system for <strong>independent component communication.</strong></p>
     <ul>
         <li><code>Subscribe(T handler)</code> → Adds an event listener.</li>
@@ -42,7 +32,7 @@ GameManager.Instance.DoSomething();
 messageNotifier.Subscribe(msg => Debug.Log("Received: " + msg));
 messageNotifier.Notify("Hello, World!");
     </code></pre>
-  <h3>4️⃣ Serializable (Serializable GUID Support)</h3>
+  <h3>3️⃣ Serializable (Serializable GUID Support)</h3>
     <p>Provides serialization support for Unity's GUID system.</p>
     <ul>
         <li><code>SerializableGuid</code> structure stores GUIDs as <code>uint</code> values.</li>
@@ -53,7 +43,7 @@ string hex = sGuid.ToHexString();
 Guid normalGuid = sGuid.ToGuid();
     </code></pre>
 
-  <h3>5️⃣ TagSelector (Unity Tag Selection System)</h3>
+  <h3>4️⃣ TagSelector (Unity Tag Selection System)</h3>
     <p>Custom property drawer that enables <strong>convenient tag selection</strong> in the Unity Inspector.</p>
     <ul>
         <li><strong>Single Tag Selection:</strong> Select Unity tags from a dropdown menu.</li>
