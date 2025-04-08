@@ -1,19 +1,6 @@
 <body>
   <h1>📦 Utilities</h1>
-    <p><strong>Utilities</strong> is a modular and flexible utility library for Unity, providing essential helper functions and event management systems.</p>
-  <h2>🚀 Features</h2>
-  <h3>1️⃣ Notifier (Observer-Based Notification System)</h3>
-    <p>Lightweight messaging system for <strong>independent component communication.</strong></p>
-    <ul>
-        <li><code>Subscribe(T handler)</code> → Adds an event listener.</li>
-        <li><code>Unsubscribe(T handler)</code> → Removes an event listener.</li>
-        <li><code>Notify(T data)</code> → Triggers an event.</li>
-    </ul>
-    <pre><code>Notifier<string> messageNotifier = new Notifier<string>();
-messageNotifier.Subscribe(msg => Debug.Log("Received: " + msg));
-messageNotifier.Notify("Hello, World!");
-    </code></pre>
-  <h3>2️⃣ Serializable (Serializable GUID Support)</h3>
+  <h3>Serializable (Serializable GUID Support)</h3>
     <p>Provides serialization support for Unity's GUID system.</p>
     <ul>
         <li><code>SerializableGuid</code> structure stores GUIDs as <code>uint</code> values.</li>
