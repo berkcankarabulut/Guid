@@ -1,6 +1,6 @@
 using System;
 
-namespace Project.Utility.Runtime
+namespace Guid.Runtime
 {
     public static class GuidExtensions
     {
