@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Guid.Runtime
+namespace GuidSystem.Runtime
 {
     [Serializable]
     public struct SerializableGuid : IEquatable<SerializableGuid>
