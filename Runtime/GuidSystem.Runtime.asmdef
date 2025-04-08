@@ -1,6 +1,6 @@
 {
-    "name": "Guid.Runtime",
-    "rootNamespace": "Guid.Runtime",
+    "name": "GuidSystem.Runtime",
+    "rootNamespace": "GuidSystem.Runtime",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
