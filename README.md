@@ -1,5 +1,4 @@
 <body>
-  <h1>📦 Utilities</h1>
   <h3>Serializable (Serializable GUID Support)</h3>
     <p>Provides serialization support for Unity's GUID system.</p>
     <ul>
