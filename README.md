@@ -1,6 +1,6 @@
 <body>
   <h1>📦 Utilities</h1>
-    <p><strong>PackageUtilities</strong> is a modular and flexible utility library for Unity, providing essential helper functions and event management systems.</p>
+    <p><strong>Utilities</strong> is a modular and flexible utility library for Unity, providing essential helper functions and event management systems.</p>
   <h2>🚀 Features</h2>
   <h3>1️⃣ EventBus (Event Management System)</h3>
     <p>The EventBus allows <strong>loosely coupled communication</strong> between different components.</p>
